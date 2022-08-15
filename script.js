@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Cypriot", "Student", "in Thessaloniki"],
+        strings: ["Cypriot", "a collage student", "in Thessaloniki"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
