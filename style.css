@@ -597,11 +597,11 @@ footer span a:hover{
   }
 
   .social_list #li_list.instagram{
-    background: #8a3ab9;
+    background: rgb(38, 38, 38);
   }
 
   .social_list #li_list.linkedin{
-    background: #70b5f9;;
+    background: #0069b3;
   }
 
 /* responsive media query start */
@@ -658,7 +658,7 @@ footer span a:hover{
     left: 51px;
     width: 0px;
     height: 50px;
-    background: #8a3ab9;
+    background: rgb(38, 38, 38);
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
   }
@@ -695,7 +695,7 @@ footer span a:hover{
     left: 51px;
     width: 0px;
     height: 50px;
-    background: #70b5f9;
+    background: #0069b3;
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
   }
