@@ -330,7 +330,7 @@ section .title::after{
     top: calc(50% - 2em);
     
     height: 2em;
-    width: 7em;
+    width: 9em;
 
     background: #101b1d;
     background: linear-gradient(top, #555, #333);
