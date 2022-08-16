@@ -42,14 +42,11 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Cypriot", "a collage student", "in Thessaloniki"],
+        strings: ["Cypriot", "collage student", "in Thessaloniki"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-
-
-    
 
 
     // owl carousel script
