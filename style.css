@@ -197,7 +197,7 @@ section .title::after{
     color: rgb(156, 28, 54);
     font-weight: 400;
 }
-/* .home .home-content a{
+ .home .home-content a{
     display: inline-block;
     background: rgb(156, 28, 54);;
     color: #fff;
@@ -208,11 +208,11 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid rgb(156, 28, 54);
     transition: all 0.3s ease;
-} */
-/* .home .home-content a:hover{
+} 
+ .home .home-content a:hover{
     color: rgb(156, 28, 54);
     background: none;
-} */
+} 
 
 /* about section styling */
 .about .title::after{
@@ -314,8 +314,8 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-/* Home button about me */
+/* 
+ Home button about me 
 .more_about {
     animation: wiggle 2s linear infinite;
 }
@@ -341,7 +341,7 @@ section .title::after{
     font-family: Helvetica, Arial, Sans-serif;
     font-size: 1em;
     transform-origin: 50% 5em;
-  }
+  } */
 
 /* Keyframes */
 @keyframes wiggle {
