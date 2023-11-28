@@ -28,7 +28,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -214,6 +214,27 @@ section .title::after{
     background: none;
 } 
 
+
+/* Video background */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure it stays in the background */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+}
+
+
+.
 /* about section styling */
 .about .title::after{
     content: "who i am";
@@ -314,6 +335,12 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+.myblogs {
+    background-color: black;
+    color: white; /* Optional: change the text color for better visibility */
+}
+
 /* 
  Home button about me 
 .more_about {
@@ -531,7 +558,7 @@ section .title::after{
 /* footer section styling */
 footer{
     background: #111;
-    background-image: url(Photos/background.jpg);
+    /* background-image: url(Photos/background.jpg); */
     padding: 15px 23px;
     color: #fff;
     text-align: center;
