@@ -290,7 +290,7 @@ section .title::after{
     background: #fff;
 }
 .myblogs .title::after{
-    background: #111;
+    background: #000;
     content: "what i provide";
 }
 
