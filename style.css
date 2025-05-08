@@ -295,7 +295,7 @@ section .title::after{
 }
 
 .myblogs .link{
-    color: rgb(32, 69, 99);
+    color: rgb(255 255 255);
 }
 
 .myblogs .link:hover{
