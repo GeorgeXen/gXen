@@ -194,19 +194,19 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-2 span{
-    color: rgb(48 197 236);
+    color: #c7efff;
     font-weight: 400;
 }
  .home .home-content a{
     display: inline-block;
-    background: rgb(32, 69, 99);;
-    color: #fff;
+    background: #c7efff;
+    color: #303C41;
     font-size: 20px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 300;
     border-radius: 6px;
-    border: 2px solid rgb(32, 69, 99);
+    border: 2px solid #c7efff;
     transition: all 0.3s ease;
 } 
  .home .home-content a:hover{
