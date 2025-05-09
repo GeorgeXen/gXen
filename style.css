@@ -102,7 +102,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: #c7efff;
+    color: #1c3f60;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -194,23 +194,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-2 span{
-    color: #c7efff;
+    color: #1c3f60;
     font-weight: 400;
 }
  .home .home-content a{
     display: inline-block;
-    background: #c7efff;
-    color: #303C41;
+    background: #1c3f60;
+    color: #ffffff;
     font-size: 20px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 300;
     border-radius: 6px;
-    border: 2px solid #c7efff;
+    border: 2px solid #1c3f60;
     transition: all 0.3s ease;
 } 
  .home .home-content a:hover{
-    color: rgb(32, 69, 99);
+    color: rgb(255, 255, 255);
     background: none;
 } 
 
