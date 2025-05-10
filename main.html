@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -69,7 +70,20 @@
                     <p>I was born in Limassol, Cyprus, and I’m currently based in Brussels, Belgium. I graduated from the Department of Information and Electronic Systems Engineering in Thessaloniki, Greece. My background spans R&D engineering, digital operations, leadership support, and communication management.</p><!-- grapse gia esena!!!!!!!!!!!!!!-->
                     <br> 
                     <p>Today, I work at the European Parliament as Administration & Communication Manager to MEP Fidias Panayiotou — organizing high-level political operations across Brussels, Strasbourg, and Cyprus. Beyond engineering, I’m passionate about systems thinking, leadership psychology, and emotional intelligence. I believe that clarity, consistency, and care can transform not only projects — but people.</p> 
-                    <a href="Blogs/George Xenofontos_CV.pdf" target="_blank">Download CV</a>
+                <p class="audio-intro-text">🎧 Hear a quick overview of my CV – no scrolling needed.</p>
+                    <div class="custom-audio-player">
+                        <img src="Photos/Icons-06.png" alt="Audio Visual" class="audio-thumbnail">
+                        <audio id="myAudio" src="Audio/Aboutme.mp3"></audio>
+                        <button id="playBtn" class="play-button"><i class="fa fa-play"></i></button>
+
+                        <div class="waveform-bar" id="waveformBar">
+                            <div class="waveform-progress" id="waveformProgress">
+                                <div class="progress-dot" id="progressDot"></div>
+                            </div>
+                        </div>
+
+                    <span id="audioTime">0:00 / 0:00</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,7 +156,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Thessaloniki, Greece</div>
+                                <div class="sub-title">Brussels, Belgium</div>
                             </div>
                         </div>
                         <div class="row">
@@ -216,7 +230,7 @@
 
     <!-- footer section start -->
     <footer>
-       <span >Created By gXen <span class="fa fa-copyright"></span> 2024 All rights reserved.</span> 
+       <span >Created By gXen <span class="fa fa-copyright"></span> 2025 All rights reserved.</span> 
     </footer>
 
     <script src="script.js"></script>

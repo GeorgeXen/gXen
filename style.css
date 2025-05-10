@@ -280,6 +280,92 @@ section .title::after{
     background: none;
 }
 
+/* ====recording====== */
+.audio-intro-text {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.custom-audio-player {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: fit-content;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.audio-thumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.play-button {
+    background-color: white;
+    border: 2px solid #1c3f60;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #1c3f60;
+    cursor: pointer;
+}
+
+.waveform-bar {
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.waveform-progress {
+    position: absolute;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to right,
+        #1c3f60,
+        #1c3f60 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.progress-dot {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #1c3f60;
+    border-radius: 50%;
+}
+
+#audioTime {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+    font-family: monospace;
+}
+
+
+/* ================================ */
+
+
 /* My blogs section styling */
 .myblogs {
     color:#fff;

@@ -48,6 +48,55 @@ $(document).ready(function(){
         loop: true
     });
 
+    // Audio trial =========================
+
+const audio = document.getElementById("myAudio");
+const playBtn = document.getElementById("playBtn");
+const audioTime = document.getElementById("audioTime");
+const waveformBar = document.getElementById("waveformBar");
+const waveformProgress = document.getElementById("waveformProgress");
+
+audio.addEventListener("loadedmetadata", () => {
+    audioTime.textContent = `0:00 / ${formatTime(audio.duration)}`;
+});
+
+playBtn.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        playBtn.innerHTML = '<i class="fa fa-pause"></i>';
+    } else {
+        audio.pause();
+        playBtn.innerHTML = '<i class="fa fa-play"></i>';
+    }
+});
+
+audio.addEventListener("ended", () => {
+    playBtn.innerHTML = '<i class="fa fa-play"></i>';
+});
+
+audio.addEventListener("timeupdate", () => {
+    const current = formatTime(audio.currentTime);
+    const total = formatTime(audio.duration);
+    audioTime.textContent = `${current} / ${total}`;
+
+    const percent = (audio.currentTime / audio.duration) * 100;
+    waveformProgress.style.width = `${percent}%`;
+});
+
+waveformBar.addEventListener("click", (e) => {
+    const barWidth = waveformBar.clientWidth;
+    const clickX = e.offsetX;
+    const percent = clickX / barWidth;
+    audio.currentTime = percent * audio.duration;
+});
+
+function formatTime(seconds) {
+    const min = Math.floor(seconds / 60);
+    const sec = Math.floor(seconds % 60).toString().padStart(2, '0');
+    return `${min}:${sec}`;
+}
+
+// ===================================================
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -72,3 +121,4 @@ $(document).ready(function(){
         }
     });
 });
+
