@@ -208,11 +208,11 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid #1c3f60;
     transition: all 0.3s ease;
-} 
+}
  .home .home-content a:hover{
     color: rgb(255, 255, 255);
     background: none;
-} 
+}
 
 
 /* Video background */
@@ -392,21 +392,24 @@ section .title::after{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 10px;
-
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .myblogs .blog-content .card:hover{
     color: rgb(32, 69, 99);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    background: #2a2a2a;
 }
 .myblogs .blog-content .card .box{
     transition: all 0.3s ease;
 }
 .myblogs .blog-content .card:hover .box{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .myblogs .blog-content .card i{
     font-size: 50px;
@@ -427,8 +430,8 @@ section .title::after{
     color: white; /* Optional: change the text color for better visibility */
 }
 
-/* 
- Home button about me 
+/*
+ Home button about me
 .more_about {
     animation: wiggle 2s linear infinite;
 }
@@ -438,10 +441,10 @@ section .title::after{
 }
 
 .more_about {
-    
+
     left: calc(50% - 3em);
     top: calc(50% - 2em);
-    
+
     height: 2em;
     width: 8.5em;
 
@@ -665,7 +668,7 @@ footer span a:hover{
 }
 
 .myblogs .row {
-   
+
     margin: 8px -16px;
 }
 
@@ -723,7 +726,7 @@ footer span a:hover{
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
-  
+
   .social_list #li_list .fa {
     position: absolute;
     top: 50%;
@@ -732,7 +735,7 @@ footer span a:hover{
     font-size: 20px;
     color: #fff;
   }
-  
+
   .social_list #li_list.facebook{
     background: #3b5998;
   }
@@ -766,7 +769,7 @@ footer span a:hover{
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
   }
-  
+
   .slider_fb p {
     font-family: arial;
     text-transform: uppercase;
@@ -778,20 +781,20 @@ footer span a:hover{
     opacity: 0;
     transition: all 0.6s ease;
   }
-  
+
   ul li:hover .slider_fb {
     width: 180px;
     transition: all 0.5s ease;
   }
-  
+
   ul li:hover .slider_fb p {
     opacity: 1;
     transition: all 1s 0.2s ease;
   }
-  
+
   /* Slider for Instagram  */
 
-  
+
 .slider_insta {
     content: "";
     position: absolute;
@@ -803,7 +806,7 @@ footer span a:hover{
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
   }
-  
+
   .slider_insta p {
     font-family: arial;
     text-transform: uppercase;
@@ -815,20 +818,20 @@ footer span a:hover{
     opacity: 0;
     transition: all 0.6s ease;
   }
-  
+
   ul li:hover .slider_insta {
     width: 180px;
     transition: all 0.5s ease;
   }
-  
+
   ul li:hover .slider_insta p {
     opacity: 1;
     transition: all 1s 0.2s ease;
   }
-  
+
   /* Slider for Linkedin */
 
-  
+
 .slider_link {
     content: "";
     position: absolute;
@@ -840,7 +843,7 @@ footer span a:hover{
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
   }
-  
+
   .slider_link p {
     font-family: arial;
     text-transform: uppercase;
@@ -852,19 +855,19 @@ footer span a:hover{
     opacity: 0;
     transition: all 0.6s ease;
   }
-  
+
   ul li:hover .slider_link {
     width: 180px;
     transition: all 0.5s ease;
   }
-  
+
   ul li:hover .slider_link p {
     opacity: 1;
     transition: all 1s 0.2s ease;
   }
-  
-  
-  
+
+
+
 
 /* Tick about media */
 
@@ -1216,7 +1219,7 @@ footer span a:hover{
 }
 
 /* Animations */
-/* 
+/*
 .animation_down {
     width: 100px;
     height: 2px;
@@ -1261,35 +1264,35 @@ footer span a:hover{
     float: left;
     width: 75%;
   }
-  
+
   /* Right column */
   .rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
   }
-  
+
   /* Fake image */
   .image {
     background-color: #555;
     width: 100%;
     padding: 20px;
   }
-  
+
   /* Add a card effect for articles */
   .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
   }
-  
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
+
   /* Footer */
   .footer {
     padding: 20px;
@@ -1297,7 +1300,7 @@ footer span a:hover{
     background: #ddd;
     margin-top: 20px;
   }
-  
+
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
