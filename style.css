@@ -166,17 +166,45 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("Photos/background.jpg") no-repeat center;
+    /* Animated Gradient Background */
+    background: linear-gradient(-45deg, #0f172a, #1e1b4b, #172554, #121212);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Keyframes for the gradient animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Optional overlay to make text pop even more against the colorful gradient */
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(18, 18, 18, 0.6) 100%);
+    pointer-events: none;
+}
+
 .home .max-width{
   width: 100%;
   display: flex;
+  position: relative; /* ensure text stays above the overlay */
+  z-index: 1;
 }
 .home .max-width .row{
   margin-right: 0;
@@ -377,7 +405,7 @@ section .title::after{
 .myblogs {
     color:#fff;
     /* background: #121212; */
-    background-image: url(Photos/background.jpg);
+    background: #121212;
 }
 .myblogs .title::before {
     background: #fff;
@@ -654,7 +682,7 @@ section .title::after{
 /* footer section styling */
 footer{
     background: #121212;
-    /* background-image: url(Photos/background.jpg); */
+    /* background: #121212; */
     padding: 15px 23px;
     color: #fff;
     text-align: center;
