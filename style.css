@@ -10,6 +10,10 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-color: #121212;
+    color: #cccccc;
+}
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -63,17 +67,20 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #333333;
     transform: translateX(-50%);
+}
+section .title{
+    color: #ffffff;
 }
 section .title::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
     padding: 0 5px;
-    background: #fff;
+    background: #121212;
     transform: translateX(-50%);
 }
 
@@ -89,7 +96,8 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(32, 69, 99);
+    background: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 .navbar .max-width{
     display: flex;
@@ -102,11 +110,11 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: #1c3f60;
+    color: #3b82f6;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: #3b82f6;
 }
 .navbar .menu li{
     list-style: none;
@@ -121,10 +129,10 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #3b82f6;
 }
 
 /* menu btn styling */
@@ -138,7 +146,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(32, 69, 99);
+    background: #3b82f6;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -194,24 +202,24 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-2 span{
-    color: #1c3f60;
+    color: #3b82f6;
     font-weight: 400;
 }
  .home .home-content a{
     display: inline-block;
-    background: #1c3f60;
+    background: #3b82f6;
     color: #ffffff;
     font-size: 20px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 300;
     border-radius: 6px;
-    border: 2px solid #1c3f60;
+    border: 2px solid #3b82f6;
     transition: all 0.3s ease;
 }
  .home .home-content a:hover{
-    color: rgb(255, 255, 255);
-    background: none;
+    color: #3b82f6;
+    background: transparent;
 }
 
 
@@ -256,28 +264,30 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 .about .about-content .right .text span{
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
 }
 .about .about-content .right p{
     text-align: justify;
+    color: #cccccc;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(32, 69, 99);
-    color: #fff;
+    background: #3b82f6;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(32, 69, 99);
+    border: 2px solid #3b82f6;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: rgb(32, 69, 99);
-    background: none;
+    color: #3b82f6;
+    background: transparent;
 }
 
 /* ====recording====== */
@@ -285,7 +295,7 @@ section .title::after{
     font-size: 14px;
     font-weight: 500;
     padding-top: 14px;
-    color: #333;
+    color: #a0a0a0;
     margin-bottom: 8px;
     font-style: italic;
 }
@@ -293,10 +303,10 @@ section .title::after{
 .custom-audio-player {
     display: flex;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #1e1e1e;
     border-radius: 30px;
     padding: 12px 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     width: fit-content;
     gap: 15px;
     max-width: 100%;
@@ -310,8 +320,8 @@ section .title::after{
 }
 
 .play-button {
-    background-color: white;
-    border: 2px solid #1c3f60;
+    background-color: #1e1e1e;
+    border: 2px solid #3b82f6;
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -320,15 +330,20 @@ section .title::after{
     align-items: center;
     padding: 0;
     font-size: 14px;
-    color: #1c3f60;
+    color: #3b82f6;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.play-button:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
 }
 
 .waveform-bar {
     position: relative;
     width: 200px;
     height: 10px;
-    background: #e0e0e0;
+    background: #333333;
     border-radius: 5px;
     cursor: pointer;
     flex-grow: 1;
@@ -338,13 +353,7 @@ section .title::after{
 .waveform-progress {
     position: absolute;
     height: 100%;
-    background: repeating-linear-gradient(
-        to right,
-        #1c3f60,
-        #1c3f60 2px,
-        transparent 2px,
-        transparent 4px
-    );
+    background: #3b82f6;
     border-radius: 5px;
     width: 0%;
     transition: width 0.1s linear;
@@ -356,13 +365,14 @@ section .title::after{
     right: 0;
     width: 12px;
     height: 12px;
-    background-color: #1c3f60;
+    background-color: #ffffff;
     border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 #audioTime {
     font-size: 14px;
-    color: #555;
+    color: #cccccc;
     white-space: nowrap;
     font-family: monospace;
     min-width: 75px;
@@ -376,15 +386,15 @@ section .title::after{
 /* My blogs section styling */
 .myblogs {
     color:#fff;
-    /* background: #111; */
-    background-image: url(Photos/background.jpg);
+    background-color: #121212;
 }
 .myblogs .title::before {
-    background: #fff;
+    background: #ffffff;
 }
 .myblogs .title::after{
-    background: #000;
+    background: #121212;
     content: "what i provide";
+    color: #3b82f6;
 }
 
 .myblogs .link{
@@ -397,20 +407,20 @@ section .title::after{
 
 .myblogs .blog-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #1e1e1e;
     text-align: center;
     border-radius: 12px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 .myblogs .blog-content .card:hover{
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    background: #2a2a2a;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    background: #252525;
 }
 .myblogs .blog-content .card .box{
     transition: all 0.3s ease;
@@ -420,7 +430,7 @@ section .title::after{
 }
 .myblogs .blog-content .card i{
     font-size: 50px;
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
     transition: color 0.3s ease;
 }
 .myblogs .blog-content .card:hover i{
@@ -432,10 +442,6 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-.myblogs {
-    background-color: black;
-    color: white; /* Optional: change the text color for better visibility */
-}
 
 /*
  Home button about me
@@ -497,7 +503,7 @@ section .title::after{
     content: "who with me";
 }
 .teams .carousel .card{
-    background: #222;
+    background: #1e1e1e;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -505,7 +511,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: rgb(32, 69, 99);
+    background: #3b82f6;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -527,7 +533,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(32, 69, 99);
+    border: 5px solid #3b82f6;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -543,7 +549,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(32, 69, 99)!important;
+    border: 2px solid #3b82f6!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -552,7 +558,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: rgb(32, 69, 99)!important;
+    background: #3b82f6!important;
 }
 
 /* contact section styling */
@@ -566,9 +572,11 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 .contact .contact-content .left p{
     text-align: justify;
+    color: #cccccc;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -583,13 +591,14 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    color: #ffffff;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #a0a0a0;
 }
 .contact .right form .fields{
     display: flex;
@@ -632,7 +641,7 @@ section .title::after{
   align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
+  color: #ffffff;
   display: block;
   width: 160px!important;
   height: 45px;
@@ -642,26 +651,26 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: rgb(32, 69, 99);
-  border: 2px solid rgb(32, 69, 99);
+  background: #3b82f6;
+  border: 2px solid #3b82f6;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: rgb(32, 69, 99);
-  background: none;
+  color: #3b82f6;
+  background: transparent;
 }
 
 /* footer section styling */
 footer{
-    background: #111;
-    /* background-image: url(Photos/background.jpg); */
+    background: #1e1e1e;
     padding: 15px 23px;
-    color: #fff;
+    color: #cccccc;
     text-align: center;
+    border-top: 1px solid #333333;
 }
 
 footer span a{
-    color: rgb(32, 69, 99);
+    color: #3b82f6;
     text-decoration: none;
 }
 footer span a:hover{
@@ -781,7 +790,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #1e1e1e;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -1175,15 +1184,27 @@ footer span a:hover{
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 2px solid rgb(32, 69, 99);
-    color: rgb(32, 69, 99);
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
     font-size: 20px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    background: rgb(32, 69, 99);
-    color: #fff;
-    box-shadow: 0 0 10px rgba(32, 69, 99, 0.5);
+    background: #3b82f6;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Scroll-in Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
