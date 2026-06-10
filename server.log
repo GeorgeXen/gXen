@@ -1,0 +1,27 @@
+127.0.0.1 - - [10/Jun/2026 20:40:17] "GET /main.html HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:17] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:17] "GET /Photos/Profile_photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:17] "GET /Photos/Icons-06.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:17] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:18] code 404, message File not found
+127.0.0.1 - - [10/Jun/2026 20:40:18] "GET /Photos/background.jpg HTTP/1.1" 404 -
+127.0.0.1 - - [10/Jun/2026 20:40:18] "GET /Photos/video.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:18] "GET /Audio/Aboutme.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /main.html HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /Photos/Icons-06.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /Photos/Profile_photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] code 404, message File not found
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /Photos/background.jpg HTTP/1.1" 404 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /Photos/video.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:40:58] "GET /Audio/Aboutme.mp3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /main.html HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /Photos/Profile_photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /Photos/Icons-06.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] code 404, message File not found
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /Photos/background.jpg HTTP/1.1" 404 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /Photos/video.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jun/2026 20:41:27] "GET /Audio/Aboutme.mp3 HTTP/1.1" 200 -
