@@ -1208,15 +1208,3 @@ footer span a:hover{
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Tech Nodes Canvas Background */
-#techNodesCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; /* Place behind all content */
-    background-color: #121212; /* Base dark theme color */
-    pointer-events: none; /* Let clicks pass through to content */
-}
