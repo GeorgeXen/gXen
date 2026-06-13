@@ -1209,3 +1209,15 @@ footer span a:hover{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Animated Background Canvas */
+#techNodesCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.5;
+}
