@@ -44,7 +44,6 @@ section{
 }
 .about .about-content,
 .about-tick .tick-about-content,
-.myblogs .blog-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -406,38 +405,36 @@ section .title::after{
     color: white;
 }
 
-.myblogs .blog-content .card{
-    width: calc(33% - 20px);
+.myblogs .carousel .card{
     background: #1e1e1e;
     text-align: center;
     border-radius: 12px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-.myblogs .blog-content .card:hover{
+.myblogs .carousel .card:hover{
     color: #3b82f6;
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     background: #252525;
 }
-.myblogs .blog-content .card .box{
+.myblogs .carousel .card .box{
     transition: all 0.3s ease;
 }
-.myblogs .blog-content .card:hover .box{
+.myblogs .carousel .card:hover .box{
     transform: scale(1.02);
 }
-.myblogs .blog-content .card i{
+.myblogs .carousel .card i{
     font-size: 50px;
     color: #3b82f6;
     transition: color 0.3s ease;
 }
-.myblogs .blog-content .card:hover i{
+.myblogs .carousel .card:hover i{
     color: #fff;
 }
-.myblogs .blog-content .card .text{
+.myblogs .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -831,10 +828,6 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .myblogs .blog-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -867,9 +860,6 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 17px;
-    }
-    .myblogs .blog-content .card{
-        width: 100%;
     }
 }
 
@@ -1042,9 +1032,6 @@ footer span a:hover{
     }
     .home-tick .tick-content a{
         font-size: 20px;
-    }
-    .myblogs .blog-content .card{
-        width: 100%;
     }
 }
 
