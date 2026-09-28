@@ -1208,3 +1208,75 @@ footer span a:hover{
     pointer-events: none;
     opacity: 0.5;
 }
+
+/* About me tabs */
+.about-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.about-tab-card {
+    background: #1e1e1e;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-tab-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    background: #252525;
+}
+
+.about-tab-card.active {
+    border-color: #3b82f6;
+    color: #ffffff;
+    background: #1a1a1a;
+}
+
+.about-tab-card i {
+    font-size: 20px;
+    color: #3b82f6;
+}
+
+.about-tab-card span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.about-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-tab-content p {
+    color: #fff !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 15px !important;
+    opacity: 1 !important;
+}
