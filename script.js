@@ -59,6 +59,16 @@ $(document).ready(function(){
         // Get the target content ID and make it active
         var targetContent = $(this).data("target");
         $("#" + targetContent).addClass("active");
+
+        // Pause audio if playing
+        const audioElem = document.getElementById("myAudio");
+        if (audioElem && !audioElem.paused) {
+            audioElem.pause();
+            const playBtnElem = document.getElementById("playBtn");
+            if (playBtnElem) {
+                playBtnElem.innerHTML = '<i class="fa fa-play"></i>';
+            }
+        }
     });
 
 
