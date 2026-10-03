@@ -6,7 +6,7 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-        
+
         // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -47,6 +47,20 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
+    // About tabs logic
+    $(".about-tab-card").click(function(){
+        // Remove active class from all cards and contents
+        $(".about-tab-card").removeClass("active");
+        $(".about-tab-content").removeClass("active");
+
+        // Add active class to clicked card
+        $(this).addClass("active");
+
+        // Get the target content ID and make it active
+        var targetContent = $(this).data("target");
+        $("#" + targetContent).addClass("active");
+    });
+
 
     // Audio trial =========================
 
