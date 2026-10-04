@@ -62,6 +62,7 @@ $(document).ready(function(){
 
         // Trigger resize for Owl Carousel if inside the active tab
         if (targetContent === "professional-content") {
+            $("#professional-badges-content").addClass("active");
             setTimeout(function() {
                 $('.badges-carousel').trigger('refresh.owl.carousel');
             }, 100);
