@@ -60,6 +60,13 @@ $(document).ready(function(){
         var targetContent = $(this).data("target");
         $("#" + targetContent).addClass("active");
 
+        // Trigger resize for Owl Carousel if inside the active tab
+        if (targetContent === "professional-content") {
+            setTimeout(function() {
+                $('.badges-carousel').trigger('refresh.owl.carousel');
+            }, 100);
+        }
+
         // Pause audio if playing
         const audioElem = document.getElementById("myAudio");
         if (audioElem && !audioElem.paused) {
