@@ -1298,7 +1298,7 @@ footer span a:hover{
 }
 
 .badge-card {
-    background: #1e1e1e;
+    background: #ffffff;
     text-align: center;
     border-radius: 12px;
     padding: 20px;
@@ -1307,10 +1307,22 @@ footer span a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .badge-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    background: #252525;
+    background: #f9f9f9;
+}
+
+/* Force equal height in badges carousel */
+.badges-carousel .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+
+.badges-carousel .owl-item {
+    display: flex;
 }
